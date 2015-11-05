@@ -1,0 +1,14 @@
+{
+  "name": "digglife-flashplayer",
+  "version": "0.1.0",
+  "author": "digglife",
+  "summary": "Puppet Module for Deploying updates of Adobe Flash Player",
+  "license": "MIT",
+  "source": "http://github.com/digglife/puppet-flashplayer",
+  "project_page": "https://github.com/digglife/puppet-flashplayer",
+  "issues_url": "https://github.com/digglife/puppet-flashplayer/issues",
+  "dependencies": [
+    {"name":"puppetlabs-stdlib","version_requirement":">= 1.0.0"}
+  ]
+}
+
