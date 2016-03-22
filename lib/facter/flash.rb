@@ -20,16 +20,16 @@ def reg_value(path, value)
   rval = nil
 
   with_key(path) do |reg|
-    rval = reg.read(value)
+    rval = reg.read(value)[1]
   end
 
   rval
 end
 
 Facter.add :flash do
-  confine :kenel => :windows
+  confine :kernel => :windows
   setcode do
-    require Win32::Registry
+    require 'win32/registry'
     flash = {}
     flash['npapi'] = reg_value('Software\Macromedia\FlashPlayerPlugin', 'Version')
     flash['activex'] = reg_value('Software\Macromedia\FlashPlayerActiveX', 'Version')
