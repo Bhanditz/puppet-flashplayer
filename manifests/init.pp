@@ -15,7 +15,7 @@
 #  class { 'flashplayer':
 #    server => 'example.domain.com',
 #    cert_base64_string => 'base64 string',
-#    $installer_source => '\\10.1.1.111\flash'
+#    installer_source => '\\10.1.1.111\flash'
 #  }
 #
 # === Authors
